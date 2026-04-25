@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36">
   <diagram name="Página-1" id="OiwtUknzi2VZMYBuBJi_">
-    <mxGraphModel dx="2410" dy="2833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1691" dy="2833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -154,7 +154,7 @@
             <mxPoint x="652" y="-1040" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kV53USs2dnPztzoiO9OT-69" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFF4F6);fontColor=light-dark(#000000,#000000);fontStyle=4" value="Id_Detalle_Pedido (PK)" vertex="1">
+        <mxCell id="kV53USs2dnPztzoiO9OT-69" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFF4F6);fontColor=light-dark(#000000,#000000);fontStyle=4" value="" vertex="1">
           <mxGeometry height="50" width="120" x="598" y="-1246" as="geometry" />
         </mxCell>
         <mxCell id="kV53USs2dnPztzoiO9OT-70" edge="1" parent="1" source="kV53USs2dnPztzoiO9OT-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="WuSBGAxUIwo11YRRTpgB-10">
@@ -290,6 +290,12 @@
         </mxCell>
         <mxCell id="WuSBGAxUIwo11YRRTpgB-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0:1" vertex="1">
           <mxGeometry height="30" width="60" x="320" y="-695" as="geometry" />
+        </mxCell>
+        <mxCell id="WuSBGAxUIwo11YRRTpgB-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="Id_Pedido, Id_producto" vertex="1">
+          <mxGeometry height="30" width="60" x="618" y="-1236" as="geometry" />
+        </mxCell>
+        <mxCell id="WuSBGAxUIwo11YRRTpgB-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="(PK)" vertex="1">
+          <mxGeometry height="30" width="60" x="670" y="-1236" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
