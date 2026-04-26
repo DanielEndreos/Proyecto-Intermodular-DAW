@@ -4,7 +4,11 @@
 
 ### 1. Tipo de sistema donde se ejecuta
 
-Para este proyecto he decidido usar una **máquina virtual en VMware**. Dentro de esa máquina virtual voy a instalar un sistema operativo **Linux**, y ahí es donde se montará todo el entorno del proyecto.
+Para este proyecto he decidido usar una **máquina virtual en VMware**. Dentro de esa máquina virtual voy a instalar un sistema operativo **Linux**, y ahí montaré todo el entorno del proyecto.
+
+He elegido esta opción porque me parece más cómoda para trabajar y también porque así no mezclo todo con mi sistema principal. Si algo falla o se rompe algo al instalar programas, no afecta directamente al ordenador principal.
+
+Además, para un proyecto de este tipo me parece una opción bastante buena, porque permite tener todo más ordenado y hacer pruebas sin liarla demasiado.
 
 ---
 
@@ -12,13 +16,15 @@ Para este proyecto he decidido usar una **máquina virtual en VMware**. Dentro d
 
 El sistema operativo que voy a usar es **Ubuntu 26.04 LTS**.
 
-Lo he elegido porque es compatible con las herramientas que voy a utilizar en el proyecto, como **XAMPP** y **DBeaver**, y porque Linux se usa bastante en entornos de desarrollo, ya que es un sistema operativo de código abierto.
+Lo he elegido porque es bastante conocido, tiene mucha documentación y suele usarse bastante en entornos de desarrollo. También me viene bien porque es compatible con las herramientas que voy a usar en el proyecto, como **XAMPP** y **DBeaver**.
+
+No he querido complicarme con otros sistemas más raros porque la idea era tener algo estable, simple y que funcione.
 
 ---
 
 ### 3. Requisitos de hardware
 
-Como el proyecto se va a ejecutar dentro de una máquina virtual, hay que tener en cuenta tanto el sistema operativo como los programas que se van a usar.
+Como el proyecto se va a ejecutar dentro de una máquina virtual, hay que tener en cuenta tanto el sistema operativo como los programas que se van a utilizar.
 
 #### Requisitos mínimos
 - **Procesador:** 2 núcleos
@@ -39,7 +45,7 @@ Como el proyecto se va a ejecutar dentro de una máquina virtual, hay que tener 
 - ratón
 - monitor
 
-Con esto sería suficiente para mover la máquina virtual, el sistema operativo y los programas del proyecto sin demasiados problemas.
+Con esto debería ser suficiente para mover la máquina virtual, Ubuntu y los programas del proyecto sin demasiados problemas.
 
 ---
 
@@ -48,16 +54,16 @@ Con esto sería suficiente para mover la máquina virtual, el sistema operativo 
 La instalación del entorno se haría en este orden:
 
 #### 1. Instalar VMware
-Primero hay que instalar **VMware**, que será el programa que me permitirá crear la máquina virtual.
+Primero hay que instalar **VMware**, que será el programa que permitirá crear y arrancar la máquina virtual.
 
 #### 2. Crear la máquina virtual
-Después se crea una nueva máquina virtual, asignándole memoria RAM, procesador y espacio en disco.
+Después se crea una máquina virtual nueva, asignándole procesador, memoria RAM y espacio en disco.
 
 #### 3. Instalar Ubuntu 26.04 LTS
 Una vez creada la máquina virtual, se instala **Ubuntu 26.04 LTS** dentro de ella.
 
 #### 4. Actualizar el sistema
-Después de instalar Ubuntu, conviene actualizar el sistema para que todo esté al día y evitar problemas.
+Después de instalar Ubuntu, conviene actualizar el sistema para evitar problemas y tener todo más al día.
 
 #### 5. Instalar XAMPP 8.0.30
 Luego se instala **XAMPP 8.0.30**, que servirá para tener un entorno local con:
@@ -66,7 +72,7 @@ Luego se instala **XAMPP 8.0.30**, que servirá para tener un entorno local con:
 - PHP
 - Perl
 
-Esto será útil para la parte web y para trabajar en local.
+Esto será útil para poder ejecutar la parte web en local y también para trabajar con la base de datos.
 
 #### 6. Instalar DBeaver 26.0.3
 Después se instala **DBeaver 26.0.3**, que será el programa que usaré para gestionar la base de datos del proyecto.
@@ -78,13 +84,13 @@ Con DBeaver podré:
 - revisar la base de datos
 
 #### 7. Instalar un editor de código
-También hará falta instalar un editor de código, como por ejemplo **Visual Studio Code**, para trabajar con los archivos del proyecto.
+También hará falta instalar un editor de código, como por ejemplo **Visual Studio Code**, para poder trabajar con los archivos del proyecto.
 
 #### 8. Copiar el proyecto
-Después se copiará el proyecto dentro de la máquina virtual, manteniendo la estructura de carpetas correspondiente.
+Después se copia el proyecto dentro de la máquina virtual, manteniendo la estructura de carpetas correspondiente.
 
 #### 9. Ejecutar los scripts SQL
-Por último, se ejecutarán los scripts SQL para:
+Por último, se ejecutan los scripts SQL para:
 - crear la base de datos
 - crear las tablas
 - insertar datos
@@ -96,14 +102,14 @@ Por último, se ejecutarán los scripts SQL para:
 
 Para ejecutar el proyecto habría que hacer lo siguiente:
 
-1. Iniciar VMware
-2. Arrancar la máquina virtual
-3. Iniciar Ubuntu
-4. Abrir XAMPP y arrancar los servicios necesarios
-5. Abrir DBeaver para trabajar con la base de datos
-6. Abrir el proyecto en el editor de código
-7. Ejecutar la parte web en local
-8. Comprobar que la base de datos funciona correctamente
+1. Iniciar VMware  
+2. Arrancar la máquina virtual  
+3. Iniciar Ubuntu  
+4. Abrir XAMPP y arrancar los servicios necesarios  
+5. Abrir DBeaver para trabajar con la base de datos  
+6. Abrir el proyecto en el editor de código  
+7. Ejecutar la parte web en local  
+8. Comprobar que la base de datos funciona correctamente  
 
 De esta forma todo el proyecto queda montado dentro de la máquina virtual y no depende del sistema principal.
 
@@ -112,7 +118,9 @@ De esta forma todo el proyecto queda montado dentro de la máquina virtual y no 
 ### 6. Usuarios, permisos y estructura
 
 #### Usuarios
-En este proyecto se trabajará con un usuario principal dentro del sistema Linux, que sería el usuario encargado de instalar programas, configurar el entorno y ejecutar el proyecto.
+En este proyecto se trabajará con un usuario principal dentro del sistema Linux. Ese usuario será el encargado de instalar programas, configurar el entorno y ejecutar el proyecto.
+
+Como es un proyecto académico, no he planteado varios usuarios distintos ni una gestión compleja de permisos, porque para este caso no hace falta tanto.
 
 #### Permisos
 El usuario principal tendrá permisos para:
@@ -127,42 +135,38 @@ La estructura del proyecto es la siguiente:
 ```text
 PROYECTO-INTERMODULAR-DAW
 │── .vscode
-│── bbdd
+│── docs
+│   ├── bbdd
+│   │   ├── diagramas
+│   │   │   ├── BBDD - ER.drawio
+│   │   │   ├── BBDD - ER.webp
+│   │   │   └── BBDD - Relacional.bmp
+│   │   ├── sql
+│   │   │   ├── Backup BBDD.sql
+│   │   │   ├── Consultas.sql
+│   │   │   ├── Creación BBDD.sql
+│   │   │   └── Introducción Datos.sql
+│   │   └── README_BBDD.md
+│   └── sistemas
+│       └── README_sistemas.md
 │── src
 │── tienda
 │── web
+│   ├── assets
+│   │   └── images
+│   │       ├── aspiradora.png
+│   │       ├── cafetera.png
+│   │       ├── frigorifico.png
+│   │       ├── lavadora.png
+│   │       ├── logo.png
+│   │       ├── microondas.png
+│   │       └── tienda.png
+│   ├── contacto.html
+│   ├── index.html
+│   ├── nosotros.html
+│   ├── productos.html
+│   ├── README.md
+│   └── style.css
 │── .gitattributes
 │── .gitignore
 │── README.md
-```
-### 7. Mantenimiento básico
-
-Para que el entorno del proyecto siga funcionando correctamente, conviene hacer un mantenimiento básico de vez en cuando.
-
-#### Qué se debería actualizar
-- Ubuntu 26.04 LTS
-- VMware
-- XAMPP 8.0.30
-- DBeaver 26.0.3
-- Visual Studio Code
-
-#### Cada cuánto
-No hace falta estar actualizando constantemente, pero sí es recomendable revisar actualizaciones de vez en cuando, por ejemplo una vez al mes o cuando algún programa dé problemas.
-
-#### Qué se debería revisar
-- que la máquina virtual arranque bien
-- que Ubuntu funcione correctamente
-- que XAMPP inicie Apache y MariaDB sin errores
-- que DBeaver se conecte a la base de datos
-- que los archivos del proyecto sigan bien organizados
-- que los scripts SQL funcionen correctamente
-
-#### Qué hacer si falla
-Si el entorno falla, lo primero sería revisar el error concreto. Después se podría:
-- reiniciar la máquina virtual
-- comprobar si los servicios de XAMPP están activos
-- revisar la conexión con la base de datos
-- comprobar si hay errores en los scripts SQL
-- restaurar una copia de seguridad del proyecto si hiciese falta
-
-También sería recomendable guardar copias del proyecto en GitHub para no perder el trabajo realizado.
