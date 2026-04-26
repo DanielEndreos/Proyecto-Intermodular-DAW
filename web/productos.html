@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Tienda online de electrodomésticos para el hogar">
-        <meta name="keywords" content="electrodomesticos, lavadoras, frigorificos, microondas, cafeteras, aspiradoras">
+        <meta name="description" content="Catálogo de productos de ElectroHogar">
+        <meta name="keywords" content="electrodomesticos, frigorificos, lavadoras, microondas, cafeteras, aspiradoras">
         <meta name="author" content="ElectroHogar">
         <link rel="stylesheet" href="style.css">
-        <title>ElectroHogar</title>
+        <title>Productos | ElectroHogar</title>
     </head>
 
     <body>
@@ -38,34 +38,16 @@
         <!-- MAIN -->
         <main>
 
-            <!-- HERO -->
-            <section class="inicio">
-                <h2 class="titulo-section">Bienvenido a ElectroHogar</h2>
-                <hr class="separador-section">
-
-                <div class="inicio-contenido">
-                    <p>
-                        En <strong>ElectroHogar</strong> ofrecemos una selección de electrodomésticos para el hogar,
-                        tanto grandes como pequeños. La idea de esta web es mostrar de forma clara algunos de los
-                        productos de la tienda y facilitar el contacto con el cliente.
-                    </p>
-
-                    <ul class="inicio-botones">
-                        <li><a href="./productos.html" class="btn">Ver productos</a></li>
-                        <li><a href="./contacto.html" class="btn btn-sec">Contactar</a></li>
-                    </ul>
-
-                    <div>
-                        <p><strong>Destacado:</strong> Productos seleccionados con buena relación calidad-precio.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PRODUCTOS DESTACADOS -->
             <section class="productos">
-                <h2 class="titulo-section">Productos destacados</h2>
+                <h2 class="titulo-section">Catálogo de productos</h2>
                 <hr class="separador-section">
 
+                <p class="texto-intro">
+                    En esta sección se muestran algunos de los productos disponibles en ElectroHogar.
+                    Se han organizado por categorías básicas para que la navegación sea más clara.
+                </p>
+
+                <h3 class="subtitulo-productos">Frigoríficos</h3>
                 <ul class="lista-productos">
 
                     <li class="item-producto">
@@ -80,9 +62,14 @@
 
                             <h3>Frigorífico Bosch KGN39</h3>
                             <p class="precio">799,99€</p>
-                            <a href="./productos.html" class="btn">Ver más</a>
+                            <button class="btn">Ver más</button>
                         </article>
                     </li>
+
+                </ul>
+
+                <h3 class="subtitulo-productos">Lavadoras</h3>
+                <ul class="lista-productos">
 
                     <li class="item-producto">
                         <article class="card">
@@ -96,9 +83,14 @@
 
                             <h3>Lavadora LG F4WV</h3>
                             <p class="precio">499,99€</p>
-                            <a href="./productos.html" class="btn">Ver más</a>
+                            <button class="btn">Ver más</button>
                         </article>
                     </li>
+
+                </ul>
+
+                <h3 class="subtitulo-productos">Microondas</h3>
+                <ul class="lista-productos">
 
                     <li class="item-producto">
                         <article class="card">
@@ -112,9 +104,14 @@
 
                             <h3>Microondas Samsung MG23</h3>
                             <p class="precio">129,99€</p>
-                            <a href="./productos.html" class="btn">Ver más</a>
+                            <button class="btn">Ver más</button>
                         </article>
                     </li>
+
+                </ul>
+
+                <h3 class="subtitulo-productos">Pequeño electrodoméstico</h3>
+                <ul class="lista-productos">
 
                     <li class="item-producto">
                         <article class="card">
@@ -128,32 +125,27 @@
 
                             <h3>Cafetera DeLonghi EC230</h3>
                             <p class="precio">159,99€</p>
-                            <a href="./productos.html" class="btn">Ver más</a>
+                            <button class="btn">Ver más</button>
+                        </article>
+                    </li>
+
+                    <li class="item-producto">
+                        <article class="card">
+                            <figure>
+                                <img src="./assets/images/aspiradora.png"
+                                    alt="Aspiradora Rowenta XNano"
+                                    title="Aspiradora Rowenta XNano">
+                                <hr class="line">
+                                <figcaption>Aspiradora sin bolsa compacta.</figcaption>
+                            </figure>
+
+                            <h3>Aspiradora Rowenta XNano</h3>
+                            <p class="precio">189,99€</p>
+                            <button class="btn">Ver más</button>
                         </article>
                     </li>
 
                 </ul>
-            </section>
-
-            <!-- INFO -->
-            <section class="info">
-                <h2 class="titulo-section">Qué es ElectroHogar</h2>
-                <hr class="separador-section">
-
-                <div class="info-contenido">
-                    <p>
-                        ElectroHogar es una tienda ficticia creada como parte del proyecto intermodular.
-                        La web representa la parte visual del negocio, mientras que la base de datos modela
-                        la información interna de clientes, productos, pedidos y pagos.
-                    </p>
-
-                    <ul class="lista-info">
-                        <li>Catálogo organizado por categorías.</li>
-                        <li>Diseño simple y fácil de navegar.</li>
-                        <li>Formulario de contacto para consultas.</li>
-                        <li>Relación con la base de datos del proyecto.</li>
-                    </ul>
-                </div>
             </section>
 
         </main>

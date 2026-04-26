@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página de contacto de ElectroHogar">
+        <meta name="keywords" content="contacto, electrohogar, electrodomesticos, tienda">
+        <meta name="author" content="ElectroHogar">
+        <link rel="stylesheet" href="style.css">
+        <title>Contacto | ElectroHogar</title>
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <header class="header">
+            <a href="./index.html" class="header-link">
+                <img class="header-logo"
+                    src="./assets/images/logo.png"
+                    title="Logo ElectroHogar"
+                    alt="Logo ElectroHogar">
+                <hgroup class="header-info">
+                    <h1 class="header-title">ElectroHogar</h1>
+                    <p class="header-eslogan">Tecnología para tu casa, sin complicarte la vida.</p>
+                </hgroup>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+
+            <section class="contacto">
+                <h2 class="titulo-section">Contacto</h2>
+                <hr class="separador-section">
+
+                <p class="texto-intro">
+                    Si tienes alguna duda sobre productos, pedidos o disponibilidad, puedes contactar con nosotros
+                    a través del siguiente formulario.
+                </p>
+
+                <div class="contacto-info">
+                    <div class="datos-contacto">
+                        <p><strong>Dirección:</strong> Calle la Figuera 11, Valencia</p>
+                        <p><strong>Teléfono:</strong> 621 234 201</p>
+                        <p><strong>Email:</strong> contacto@electrohogar.com</p>
+                        <p><strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00</p>
+                    </div>
+
+                    <div class="mapa-contacto">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4672.9413475005995!2d-0.3751843874278866!3d39.45732461335261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048cd00313a49%3A0x50e09f9eeef6a2e4!2sC%2F%20Fuente%20la%20Higuera%2C%2011%2C%20Quatre%20Carreres%2C%2046004%20Valencia!5e1!3m2!1ses!2ses!4v1777215560662!5m2!1ses!2ses" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <form class="form">
+
+                    <div class="campo nombre">
+                        <label>Nombre completo:</label>
+                        <input type="text"
+                            placeholder="Nombre y Apellido"
+                            required>
+                    </div>
+
+                    <div class="campo email">
+                        <label>Email:</label>
+                        <input type="email"
+                            placeholder="ejemplo@hotmail.com"
+                            required>
+                    </div>
+
+                    <div class="campo mensaje">
+                        <label>Mensaje:</label>
+                        <textarea rows="5"
+                            placeholder="Escribe aquí tu consulta..."
+                            required></textarea>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" class="btn btn-enviar">Enviar</button>
+                        <button type="reset" class="btn btn-borrar">Borrar datos</button>
+                    </div>
+
+                </form>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2026 ElectroHogar</p>
+            <p>Electrodomésticos para el hogar.</p>
+        </footer>
+
+    </body>
+</html>
