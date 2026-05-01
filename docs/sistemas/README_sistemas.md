@@ -4,36 +4,38 @@
 
 ### 1. Tipo de sistema donde se ejecuta
 
-Para este proyecto he decidido usar una **máquina virtual en VMware**. Dentro de esa máquina virtual voy a instalar un sistema operativo **Linux**, y ahí montaré todo el entorno del proyecto.
+Para este proyecto he decidido usar una **máquina virtual en VMware**. Dentro de esa máquina virtual se utilizará un sistema operativo **Linux**, donde se instalarán las herramientas necesarias para probar y ejecutar el proyecto.
 
-He elegido esta opción porque me parece más cómoda para trabajar y también porque así no mezclo todo con mi sistema principal. Si algo falla o se rompe algo al instalar programas, no afecta directamente al ordenador principal.
+He elegido esta opción porque permite trabajar en un entorno separado del sistema principal. De esta forma, si hay algún problema instalando programas o configurando servicios, no afecta directamente al ordenador principal.
 
-Además, para un proyecto de este tipo me parece una opción bastante buena, porque permite tener todo más ordenado y hacer pruebas sin liarla demasiado.
+También me parece una opción adecuada para un proyecto académico, porque permite tener el entorno más controlado y ordenado.
 
 ---
 
 ### 2. Sistema operativo recomendado
 
-El sistema operativo que voy a usar es **Ubuntu 26.04 LTS**.
+El sistema operativo elegido es **Ubuntu 26.04 LTS**.
 
-Lo he elegido porque es bastante conocido, tiene mucha documentación y suele usarse bastante en entornos de desarrollo. También me viene bien porque es compatible con las herramientas que voy a usar en el proyecto, como **XAMPP** y **DBeaver**.
+Lo he elegido porque es un sistema bastante utilizado, tiene buena documentación y es compatible con las herramientas que se usan en el proyecto, como Java, Maven, XAMPP y DBeaver.
 
-No he querido complicarme con otros sistemas más raros porque la idea era tener algo estable, simple y que funcione.
+No he usado una distribución más compleja porque para este proyecto no hace falta. La idea es tener un entorno sencillo, estable y fácil de mantener.
 
 ---
 
 ### 3. Requisitos de hardware
 
-Como el proyecto se va a ejecutar dentro de una máquina virtual, hay que tener en cuenta tanto el sistema operativo como los programas que se van a utilizar.
+Como el proyecto se ejecuta dentro de una máquina virtual, hay que reservar recursos suficientes para que Ubuntu y las herramientas funcionen correctamente.
 
 #### Requisitos mínimos
+
 - **Procesador:** 2 núcleos
 - **Memoria RAM:** 4 GB
 - **Almacenamiento libre:** 25 GB
-- **Conexión a internet:** necesaria para descargar programas
+- **Conexión a internet:** necesaria para descargar programas y dependencias
 - **Pantalla:** resolución mínima de 1366x768
 
 #### Requisitos recomendados
+
 - **Procesador:** 4 núcleos
 - **Memoria RAM:** 8 GB o más
 - **Almacenamiento libre:** 40 GB o más
@@ -41,132 +43,149 @@ Como el proyecto se va a ejecutar dentro de una máquina virtual, hay que tener 
 - **Pantalla:** resolución 1920x1080
 
 #### Periféricos
-- teclado
-- ratón
-- monitor
 
-Con esto debería ser suficiente para mover la máquina virtual, Ubuntu y los programas del proyecto sin demasiados problemas.
+- Teclado
+- Ratón
+- Monitor
+
+Con estos requisitos es suficiente para ejecutar la máquina virtual, la base de datos, la aplicación Java y revisar la web del proyecto.
 
 ---
 
-### 4. Instalación del entorno
+### 4. Herramientas utilizadas
+
+Para preparar el entorno del proyecto se utilizan las siguientes herramientas:
+
+- **VMware:** para crear y ejecutar la máquina virtual.
+- **Ubuntu 26.04 LTS:** sistema operativo usado dentro de la máquina virtual.
+- **XAMPP 8.0.30:** para disponer de MariaDB y poder trabajar con la base de datos.
+- **DBeaver 26.0.3:** para gestionar la base de datos de forma visual.
+- **Java JDK:** para ejecutar la aplicación de programación.
+- **Maven:** para gestionar y ejecutar el proyecto Java.
+- **Visual Studio Code o IntelliJ IDEA:** para editar el código.
+- **Git:** para controlar versiones del proyecto.
+
+---
+
+### 5. Instalación del entorno
 
 La instalación del entorno se haría en este orden:
 
 #### 1. Instalar VMware
-Primero hay que instalar **VMware**, que será el programa que permitirá crear y arrancar la máquina virtual.
+
+Primero se instala VMware en el ordenador principal.
 
 #### 2. Crear la máquina virtual
-Después se crea una máquina virtual nueva, asignándole procesador, memoria RAM y espacio en disco.
+
+Después se crea una nueva máquina virtual, asignando memoria RAM, procesador y espacio en disco.
 
 #### 3. Instalar Ubuntu 26.04 LTS
-Una vez creada la máquina virtual, se instala **Ubuntu 26.04 LTS** dentro de ella.
+
+Una vez creada la máquina virtual, se instala Ubuntu como sistema operativo.
 
 #### 4. Actualizar el sistema
-Después de instalar Ubuntu, conviene actualizar el sistema para evitar problemas y tener todo más al día.
 
-#### 5. Instalar XAMPP 8.0.30
-Luego se instala **XAMPP 8.0.30**, que servirá para tener un entorno local con:
-- Apache
-- MariaDB
-- PHP
-- Perl
+Después de instalar Ubuntu, conviene actualizar el sistema con las actualizaciones disponibles.
 
-Esto será útil para poder ejecutar la parte web en local y también para trabajar con la base de datos.
+#### 5. Instalar XAMPP
 
-#### 6. Instalar DBeaver 26.0.3
-Después se instala **DBeaver 26.0.3**, que será el programa que usaré para gestionar la base de datos del proyecto.
+Se instala XAMPP para poder usar MariaDB en local. En este proyecto se usa principalmente para la base de datos.
 
-Con DBeaver podré:
-- crear tablas
-- insertar datos
-- ejecutar consultas
-- revisar la base de datos
+#### 6. Instalar DBeaver
 
-#### 7. Instalar un editor de código
-También hará falta instalar un editor de código, como por ejemplo **Visual Studio Code**, para poder trabajar con los archivos del proyecto.
+Se instala DBeaver para poder crear, consultar y revisar la base de datos del proyecto de forma más cómoda.
+
+#### 7. Instalar Java y Maven
+
+Se instala Java para poder ejecutar la aplicación de consola, y Maven para gestionar las dependencias del proyecto.
 
 #### 8. Copiar el proyecto
-Después se copia el proyecto dentro de la máquina virtual, manteniendo la estructura de carpetas correspondiente.
 
-#### 9. Ejecutar los scripts SQL
-Por último, se ejecutan los scripts SQL para:
-- crear la base de datos
-- crear las tablas
-- insertar datos
-- probar consultas
+Después se copia el proyecto dentro de la máquina virtual o se clona desde GitHub.
+
+#### 9. Importar la base de datos
+
+Se ejecutan los scripts SQL incluidos en el proyecto para crear la base de datos `electrohogar`, sus tablas y los datos de prueba.
 
 ---
 
-### 5. Cómo se ejecuta
+### 6. Cómo se ejecuta el proyecto
 
 Para ejecutar el proyecto habría que hacer lo siguiente:
 
-1. Iniciar VMware  
-2. Arrancar la máquina virtual  
-3. Iniciar Ubuntu  
-4. Abrir XAMPP y arrancar los servicios necesarios  
-5. Abrir DBeaver para trabajar con la base de datos  
-6. Abrir el proyecto en el editor de código  
-7. Ejecutar la parte web en local  
-8. Comprobar que la base de datos funciona correctamente  
+1. Iniciar VMware.
+2. Arrancar la máquina virtual con Ubuntu.
+3. Iniciar XAMPP y activar MariaDB.
+4. Abrir DBeaver y comprobar que la base de datos `electrohogar` existe.
+5. Importar los scripts SQL si todavía no se han ejecutado.
+6. Abrir la carpeta `web` y ejecutar `index.html` en el navegador.
+7. Abrir el proyecto Java.
+8. Ejecutar la aplicación Java por consola.
+9. Comprobar que la aplicación se conecta correctamente a la base de datos.
 
-De esta forma todo el proyecto queda montado dentro de la máquina virtual y no depende del sistema principal.
+La web no necesita un servidor complejo, porque está realizada con HTML y CSS. Se puede abrir directamente desde el navegador.
+
+La parte Java sí necesita que MariaDB esté funcionando, porque usa JDBC para acceder a la base de datos.
 
 ---
 
-### 6. Usuarios, permisos y estructura
+### 7. Usuarios, permisos y estructura
 
 #### Usuarios
-En este proyecto se trabajará con un usuario principal dentro del sistema Linux. Ese usuario será el encargado de instalar programas, configurar el entorno y ejecutar el proyecto.
 
-Como es un proyecto académico, no he planteado varios usuarios distintos ni una gestión compleja de permisos, porque para este caso no hace falta tanto.
+En este proyecto se utiliza un usuario principal dentro de Ubuntu. Ese usuario se encarga de instalar programas, configurar el entorno y ejecutar el proyecto.
+
+Como es un proyecto académico, no se ha planteado una gestión avanzada de usuarios.
 
 #### Permisos
+
 El usuario principal tendrá permisos para:
-- instalar programas
-- modificar archivos del proyecto
-- ejecutar scripts SQL
-- iniciar o detener servicios
+
+- Instalar programas.
+- Modificar archivos del proyecto.
+- Ejecutar scripts SQL.
+- Iniciar y detener MariaDB.
+- Ejecutar la aplicación Java.
+- Editar la documentación.
 
 #### Estructura de carpetas
-La estructura del proyecto es la siguiente:
+
+La estructura principal del proyecto es la siguiente:
 
 ```text
-PROYECTO-INTERMODULAR-DAW
-│── .vscode
-│── docs
-│   ├── bbdd
-│   │   ├── diagramas
-│   │   │   ├── BBDD - ER.drawio
-│   │   │   ├── BBDD - ER.webp
-│   │   │   └── BBDD - Relacional.bmp
-│   │   ├── sql
-│   │   │   ├── Backup BBDD.sql
-│   │   │   ├── Consultas.sql
-│   │   │   ├── Creación BBDD.sql
-│   │   │   └── Introducción Datos.sql
+Proyecto-Intermodular-DAW/
+│
+├── docs/
+│   ├── bbdd/
+│   │   ├── diagramas/
+│   │   ├── Backup_BBDD.sql
+│   │   ├── Consulta.sql
+│   │   ├── Creacion_BBDD.sql
+│   │   ├── Introduccion_Datos.sql
 │   │   └── README_BBDD.md
-│   └── sistemas
+│   │
+│   ├── mpo/
+│   │   └── README_mpo.md
+│   │
+│   ├── prog/
+│   │   └── README_programacion.md
+│   │
+│   └── sistemas/
 │       └── README_sistemas.md
-│── src
-│── tienda
-│── web
-│   ├── assets
-│   │   └── images
-│   │       ├── aspiradora.png
-│   │       ├── cafetera.png
-│   │       ├── frigorifico.png
-│   │       ├── lavadora.png
-│   │       ├── logo.png
-│   │       ├── microondas.png
-│   │       └── tienda.png
-│   ├── contacto.html
+│
+├── java/
+│   ├── src/
+│   ├── pom.xml
+│   └── README.md
+│
+├── web/
+│   ├── assets/
 │   ├── index.html
-│   ├── nosotros.html
 │   ├── productos.html
-│   ├── README.md
-│   └── style.css
-│── .gitattributes
-│── .gitignore
-│── README.md
+│   ├── nosotros.html
+│   ├── contacto.html
+│   ├── style.css
+│   └── README.md
+│
+├── .gitignore
+└── README.md
